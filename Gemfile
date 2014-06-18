@@ -24,6 +24,7 @@ group :development do
   gem 'quiet_assets'
   gem 'rails_layout'
 end
+
 group :production do
   gem 'rails_12factor'
 end
