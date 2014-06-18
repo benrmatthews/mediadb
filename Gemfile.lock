@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/stripe/stripe-ruby
+  revision: bb9388384f8bade9cf257e5907679e7afaab85a6
+  specs:
+    stripe (1.14.0)
+      json (~> 1.8.1)
+      mime-types (~> 1.25)
+      rest-client (~> 1.4)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -108,6 +117,8 @@ GEM
     rdoc (4.1.1)
       json (~> 1.4)
     ref (1.0.5)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
     rubygems-update (2.3.0)
     sass (3.2.19)
     sass-rails (4.0.3)
@@ -182,6 +193,7 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   simple_form
   spring
+  stripe!
   therubyracer
   thin
   turbolinks
