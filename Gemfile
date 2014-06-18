@@ -13,7 +13,6 @@ gem 'bootstrap-sass'
 gem 'devise'
 gem 'pg'
 gem 'pundit'
-gem 'sendgrid'
 gem 'simple_form'
 gem 'therubyracer', :platform=>:ruby
 gem 'thin'
