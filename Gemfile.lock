@@ -108,6 +108,7 @@ GEM
     rdoc (4.1.1)
       json (~> 1.4)
     ref (1.0.5)
+    rubygems-update (2.3.0)
     sass (3.2.19)
     sass-rails (4.0.3)
       railties (>= 4.0.0, < 5.0)
@@ -171,6 +172,7 @@ DEPENDENCIES
   rails (= 4.1.0.rc1)
   rails_12factor
   rails_layout
+  rubygems-update (~> 2.3.0)
   sass-rails (~> 4.0.1)
   sdoc (~> 0.4.0)
   simple_form
