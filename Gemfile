@@ -17,6 +17,7 @@ gem 'simple_form'
 gem 'therubyracer', :platform=>:ruby
 gem 'thin'
 gem 'rubygems-update', '~> 2.3.0'
+gem 'twitter-bootstrap-rails'
 
 group :development do
   gem 'better_errors'

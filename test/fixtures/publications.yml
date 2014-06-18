@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  media-type: MyString
+  category: MyString
+  frequency: MyString
+  readership: MyString
+  address: MyString
+  email: MyString
+  phone: MyString
+  twitter: MyString
+  bio: MyText
+  verified: false
+
+two:
+  title: MyString
+  media-type: MyString
+  category: MyString
+  frequency: MyString
+  readership: MyString
+  address: MyString
+  email: MyString
+  phone: MyString
+  twitter: MyString
+  bio: MyText
+  verified: false

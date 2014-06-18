@@ -1,0 +1,18 @@
+<%= simple_form_for @publication, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :title %>
+  <%= f.input :mediatype %>
+  <%= f.input :category %>
+  <%= f.input :frequency %>
+  <%= f.input :readership %>
+  <%= f.input :address %>
+  <%= f.input :email %>
+  <%= f.input :phone %>
+  <%= f.input :twitter %>
+  <%= f.input :bio %>
+  <%= f.input :verified %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                publications_path, :class => 'btn' %>
+  </div>
+<% end %>
