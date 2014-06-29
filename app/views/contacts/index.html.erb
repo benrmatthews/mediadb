@@ -20,8 +20,8 @@
         <td><%= link_to contact.firstname, contact_path(contact) %> <%= link_to contact.lastname, contact_path(contact) %></td>
         <td><%= contact.title %></td>
         <td><%= contact.publications %></td>
-        <td><%= link_to contact.email, "mailto:" + contact.email %></td>
-        <td><%= link_to contact.twitter, "http://twitter.com/" + contact.twitter %></td>
+        <td><%= contact.email %></td>
+        <td><%= contact.twitter %></td>
         <td><%= contact.verified %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),

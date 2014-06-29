@@ -1,2 +1,54 @@
-<h3>Welcome</h3>
-<p><%= link_to 'Users:', users_path %> <%= User.count %> registered</p>
+<% if user_signed_in? %>
+   <div class="container">
+    <div class="row">
+      <h3>Search xx contacts from xx publications</h3>
+      </div>
+    </div>
+  </div>
+<% else %>
+   <div class="container">
+    <div class="row">
+      <h2>The Media Database for Startups, Freelancers and Small Businesses</h2>
+      <p>Media Database lets Startups, Freelancers and Small Businesses tell their story to journalists and bloggers around the world.</p>
+        <p>You can try it <b>for free</b> right now.</p>
+      <%= link_to "Sign Up", "/users/sign_up", :class => "btn btn-primary" %>
+    </div>
+    <div class="row">
+      <h3>Less Time Searching, More Time Connecting with Journalists</h3>
+      <h4>Media Database lets you:</h4>
+      <p><b>Save time!</b>You can print bingo cards for an entire classroom on your normal computer and printer in mere minutes. Writing cards by hand takes hours -- hours that you could better spend doing what you do best: teaching. Leave the busywork to the computer -- it will make sure every card is scrambled and unique for you. Plus you can use the over 950 activities we included!
+      </p>
+      <p><b>Save money!</b> Don't spend $10-$15 on buying single activities from traditional publishers -- Media Database can make an infinite number of activities! If you plan on playing bingo three times or more in your teaching career it's much cheaper to print your own cards!
+      </p>
+      <p>
+        <b>Save paper!</b> Print multiple bingo cards on one sheet of paper.
+      </p>
+      <p>
+Tailor your activities! If you buy bingo sets from publishers, you're limited to what they have in stock.  If you make custom bingo cards yourself, you will always be able to match them directly to your lesson plan and students.  Try playing vocabulary bingo with vocabulary from the chapter you just finished reading, for example.
+      </p>
+      <p>
+Keep your students interested in learning! Children and adults of all ages love playing bingo. We have a variety of ideas on how you can use this to teach, assess, and motivate.
+      </p>
+      <p>
+Teach almost any subject! If you can type it on your computer, you can put it on a bingo card. Vocabulary lists, letters, numbers, math facts, social studies facts, student names great for first day jitters), famous people -- the choices are endless! See some examples of what we've done with this flexibility.
+      </p>
+Never buy another bingo product! We at Bingo Card Creator understand that budgets are tight. Accordingly, we will never charge you for an upgrade to the software. In addition, unlike some educational software companies our software can be used year after year without requiring additional license fees.  Bingo Card Creator is very affordable on any budget.
+      </p>
+      <p>  
+Buy with confidence. In addition to afree trial so you can see if Bingo Card Creator is exactly right foryou, we offer an unconditional 30 day money-back guarantee. If you'renot absolutely thrilled with our software, we don't deserve your money.
+      </p>
+      <p>  
+Don't believe us? Over 328,000 people have used Bingo Card Creator:
+"Thanks again ... I would highly recommend it to anyone I talk to!!!" – Glenda D.
+Bingo Card Creator works for Windows PCs and Macs. You can use it both at your home and school, and it saves your cards in one place.
+Try Now!
+15 seconds to get started.
+</p>
+<h3>Want To Try It Yourself?</h3>
+<p>You can make beautiful bingo cards like those. Try Bingo Card Creator for free to see how easy it is to use. You'll be done in 15 seconds.</p>
+<p>Try Now!</p>
+<p>15 seconds to get started.</p>
+      </div>
+    </div>
+  </div>
+<% end %>
