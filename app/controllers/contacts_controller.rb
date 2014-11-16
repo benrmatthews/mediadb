@@ -4,7 +4,11 @@ class ContactsController < ApplicationController
   # GET /contacts
   # GET /contacts.json
   def index
-    @contacts = Contact.all
+    if params[:search]
+      @contacts = Contact.search(params[:search]).order("created_at DESC")
+    else
+      @contacts = Contact.all.order('created_at DESC')
+    end
   end
 
   # GET /contacts/1

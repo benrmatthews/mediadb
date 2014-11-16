@@ -1,7 +1,13 @@
 <%# add navigation links to this file %>
 <% if user_signed_in? %>
   <form class="navbar-form navbar-left">
-                    <input type="text" class="form-control col-lg-8" placeholder="Search">
+    <input type="text" class="form-control col-lg-8" placeholder="Search">
+    <!-- <div>
+    <!-- <%= form_tag(contacts_path, :method => "get", id: "search-form") do %>
+    <!--  <%= text_field_tag :search, params[:search], placeholder: "Search Contacts" %> -->
+    <!--  <%= submit_tag "Search" %> -->
+    <!-- <% end %> -->
+    <!-- </div> -->
   </form>
   <li><%= link_to 'Contacts', contacts_path %></li>
   <li><%= link_to 'Publications', publications_path %></li>

@@ -8,7 +8,12 @@
         &nbsp;
         <h3>Search xx contacts from xx publications</h3>
         <form>
-          <input type="text" class="form-control col-lg-8" placeholder="Search">
+          <%= form_tag contacts_path, method: :get do %>
+            <p>
+              <%= text_field_tag :query, params[:query] %>
+              <%= submit_tag "Search", name: nil %>
+            </p>
+          <% end %>
         </form>
       </div>
       <div class="col-lg-3">
