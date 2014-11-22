@@ -7,14 +7,13 @@
         &nbsp;
         &nbsp;
         <h3>Search xx contacts from xx publications</h3>
-        <form>
-          <%= form_tag contacts_path, method: :get do %>
-            <p>
-              <%= text_field_tag :query, params[:query] %>
-              <%= submit_tag "Search", name: nil %>
-            </p>
+        </br>
+        <div>
+          <%= form_tag(contacts_path, :method => "get", id: "search-form") do %>
+            <%= text_field_tag :search, params[:search], placeholder: "Search contacts" %>
+            <%= submit_tag "Search" %>
           <% end %>
-        </form>
+        </div>
       </div>
       <div class="col-lg-3">
       </div>

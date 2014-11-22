@@ -1,11 +1,17 @@
-<h2>Coming Soon!</h2>
-<!--<div class="authform">
+<div id='stripe_error' class="alert alert-info" style='display:none'>
+</div>
+<div class="authform">
   <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :role => 'form'}) do |f| %>
     <h3>Sign up</h3>
     <%= devise_error_messages! %>
+    <%= f.hidden_field :stripe_card_token %>
+    <div class="form-group">
+      <%= f.label :name %>
+      <%= f.text_field :name, :autofocus => true, class: 'form-control' %>
+    </div>
     <div class="form-group">
       <%= f.label :email %>
-      <%= f.email_field :email, :autofocus => true, class: 'form-control' %>
+      <%= f.email_field :email, class: 'form-control' %>
     </div>
     <div class="form-group">
       <%= f.label :password %>
@@ -15,6 +21,24 @@
       <%= f.label :password_confirmation %>
       <%= f.password_field :password_confirmation, class: 'form-control' %>
     </div>
+		  <% if @user.stripe_card_token.present? %>
+		  	Credit Card is on File
+		  <% else %>
+			  <div class='form-group'>
+			  	<%= f.hidden_field :stripe_card_token %>
+          <%= label_tag :card_number, "Credit Card Number" %>
+			  	<%= text_field_tag :card_number, nil, name: nil, class: 'form-control' %>
+			  </div>
+ 
+			  <div class='form-group'>
+			  	<%= label_tag :card_code, "Security Code on Card (CVV)" %>
+				<%= text_field_tag :card_code, nil %>
+				<%= label_tag :card_month, "Card Expiration" %></br>
+				<%= select_month nil, {add_month_numbers: true}, {name: nil, id: "card_month"} %>
+				<%= select_year nil, {start_year: Date.today.year, end_year: Date.today.year+15}, {name: nil, id: "card_year"} %>
+			  </div>
+			  
+		  <% end %>
      <%= f.submit 'Sign up', :class => 'button right' %>
   <% end %>
-</div>-->
+</div>
