@@ -32,4 +32,6 @@ user =
       $('#stripe_error').text(response.error.message)
       $('#stripe_error').show()
       $('input[type=submit]').attr('disabled', false)
-      
+      jQuery ->
+  Stripe.setPublishableKey($('meta[name="stripe-key"]').attr('content'))
+  subscription.setupForm()
