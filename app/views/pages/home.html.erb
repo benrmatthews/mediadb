@@ -24,10 +24,29 @@
     <div class="row" align="center">
       <h2><b>Media Contacts for Startups, Freelancers and Small Businesses</b></h2>
       <p>Media Database lets Startups, Freelancers and Small Businesses tell their story to journalists and bloggers around the world.</p>
-        <p>You can try it <b>for free</b> right now.</p>
+      <div class="row">
+      <div class="row">
+    <div class="col-sm-5">
+      <h3>Free Account</h3>
+      <ul>
+        <li>Create unlimited public wikis</li>
+        <li>Collaborate with unlimited users</li>
+      </ul>
+      <%= link_to "Sign up now!", new_user_registration_path(plan: @free_plan.id), class: 'btn btn-default btn-lg btn-block' %>
+    </div>
+    <div class="col-sm-5 col-sm-offset-2">
+      <h3>Premium Account</h3>
+      <ul>
+        <li>All the benefits of basic</li>
+        <li>Unlimited private wikis</li>
+      </ul>
+      <%= link_to "Sign up now!", '#', class: 'btn btn-success btn-lg btn-block' %>
+    </div>
+  </div>
+        <!-- <p>You can try it <b>for free</b> right now.</p>
       <p><%= link_to "Try Media Database Now", "/users/sign_up", :class => "btn btn-primary" %></p>
       
-      <p class="small"><i>No Downloads. No Hassle. 30 Day Money-back Guarantee.</i></p>
+      <p class="small"><i>No Downloads. No Hassle. 30 Day Money-back Guarantee.</i></p>-->
     </div>
     <div class="row">
     <p>&nbsp;</p>
@@ -65,8 +84,5 @@ Media Datavase works for Windows PCs and Macs. You can use it both at your home 
       <%= link_to "Try Now!", "/users/sign_up", :class => "btn btn-primary" %>
 <p>15 seconds to get started.</p>
      
-    <p align=center"> ©2001-2014 All Rights Reserved. MediaDatabase® is a registered trademark of Montfort Consultancy Ltd. Privacy and Terms
-      </div>
-    </div>
-  </div>
+    <p align="center"> ©2001-2014 All Rights Reserved. MediaDatabase® is a registered trademark of Montfort Consultancy Ltd. Privacy and Terms</p>
 <% end %>
