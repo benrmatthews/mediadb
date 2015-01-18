@@ -1,4 +1,5 @@
 class Users::RegistrationsController < Devise::RegistrationsController
+before_filter :setup, only: [:edit]
 
   def new
     unless (params[:plan] == '1' || params[:plan] == '2')

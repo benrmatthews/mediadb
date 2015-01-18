@@ -18,7 +18,8 @@ gem 'therubyracer', :platform=>:ruby
 gem 'thin'
 gem 'rubygems-update', '~> 2.3.0'
 gem 'twitter-bootstrap-rails'
-gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+gem 'stripe-rails'
+gem 'whenever'
 
 group :development do
   gem 'better_errors'

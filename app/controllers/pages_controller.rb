@@ -4,11 +4,7 @@ class PagesController < ApplicationController
   def home
     @free_plan
     @startup_plan
-    if params[:search]
-      @contacts = Contact.search(params[:search]).order("created_at DESC")
-    else
-      @contacts = Contact.all.order('created_at DESC')
-    end
+    @contacts = Contact.all.order('created_at DESC')
   end
 
   private

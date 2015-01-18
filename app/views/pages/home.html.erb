@@ -32,7 +32,7 @@
         <li>Create unlimited public wikis</li>
         <li>Collaborate with unlimited users</li>
       </ul>
-      <%= link_to "Sign up now!", new_user_registration_path(plan: @free_plan.id), class: 'btn btn-default btn-lg btn-block' %>
+      <%= link_to "Sign up now!", new_user_path, class: 'btn btn-default btn-lg btn-block' %>
     </div>
     <div class="col-sm-5 col-sm-offset-2">
       <h3>Premium Account</h3>
@@ -40,7 +40,7 @@
         <li>All the benefits of basic</li>
         <li>Unlimited private wikis</li>
       </ul>
-      <%= link_to "Sign up now!", '#', class: 'btn btn-success btn-lg btn-block' %>
+      <%= link_to "Sign up now!", new_user_path, class: 'btn btn-success btn-lg btn-block' %>
     </div>
   </div>
         <!-- <p>You can try it <b>for free</b> right now.</p>
